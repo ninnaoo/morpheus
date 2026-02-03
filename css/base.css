@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background: black;
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  font-family: serif;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  scrollbar-width: none;
+  scrollbar-color: rgba(255, 255, 255, 0) gray; 
+  
+  
+}
+
+section {
+  height: 100vh;
+  position: relative;
+}
+.next{
+  position: absolute;
+  z-index: 90;
+  opacity: 0.9;
+  top: 92%;
+  left: 95%;
+}
+.button-next{
+  height: 50px;
+  
+  
+}
+.button-next img{
+  height: 100%;
+  border-radius: 50%;
+  border: black 1px solid;
+  
+}
+.prev{
+  position: absolute;
+  z-index: 90;
+  opacity: 0.9;
+  transform: rotate(180deg);
+  left: 95%;
+  top: 3%
+}
+.button-prev{
+  height: 50px;
+}
+.button-prev img{
+  height: 100%;
+  border-radius: 50%;
+  border: black 1px solid;
+  
+}

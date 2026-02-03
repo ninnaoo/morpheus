@@ -1,0 +1,122 @@
+#test {
+  min-height: 100vh;
+  background: url("../assets/images/letters-bg.jpeg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-inner {
+  width: 500px;
+  text-align: center;
+  color: white;
+}
+
+.test-card {
+  background: rgba(54, 55, 59, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.question {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.answer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.answer span {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.answer.active {
+  outline: 2px solid white;
+}
+
+.next-btn {
+  margin-top: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family:'comic sans ms' ;
+  font-size: 18px;
+  color: black;
+}
+
+.test-result {
+  display: none;
+}
+
+.test-result.active {
+  display: block;
+  height: 300px;
+  padding: 5% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(54, 55, 59, 0.9); 
+  font-family:'comic sans ms' ;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.test-result.active img{
+  display: block;
+  height: 75%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.test-cover{
+  background-color: rgb(97, 102, 129);
+  opacity: 1;
+  width: 500px;
+  height: 620px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  border-radius: 20px;
+  font-family:'comic sans ms' ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 2%;
+}
+.test-cover p{
+  font-size: 25px;
+}
+.test-cover h2{
+  margin-bottom: 40px;
+}
+#test-cover-btn{
+  border: none;
+  font-family: 'comic sans ms';
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 50%;
+  cursor: pointer;
+}

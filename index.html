@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>for morpheus</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/puzzle.css">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/letters.css">
+  <link rel="stylesheet" href="css/aquarius.css">
+  <link rel="stylesheet" href="css/congrats.css">
+</head>
+<body>
+
+<audio id="bg-music" src="assets/music/Nod-Krai.mp3" loop></audio>
+
+<section id="hero" data-block="banner">
+    <div class="hero-bg"></div>
+    <canvas id="stars"></canvas>
+
+    <div class="hero-content">
+        <div class="left">
+        <div class="mirum"><h1>hmm... mirum!</h1></div>
+        <div class="date"><h3>05/02/07</h3></div>
+        <div class="text"><p>don't forget, that what you see, isn't all there is.</p></div>
+        <button id="startBtn"><h2>let's start</h1></button>
+        <div class="text"><p>tap to turn on the music</p></div>
+    </div>
+
+    <div class="right">
+      <div class="vinyl-wrapper">
+        <div class="vinyl"><img src="assets/images/vinyl.png" ></div>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+</section>
+
+<section class="puzzle" id="puzzle">
+  <p class="puzzle-title">здесь есть части некоторой картинки, которую нужно собрать воедино</p>
+  <div class="pieces-ui" id="piecesUI"></div>
+  <div class="space-objects">
+    <a class="prev" href="#hero">
+      <div class="button-prev">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+    <!-- Нептун -->
+    <div class="space-object planet" data-name="Neptune" data-piece="0" data-img="assets/images/puzzle1.png">
+      <div class="float-layer">
+        <div class="piece-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Спутник 1 -->
+    <div class="space-object moon" data-name="Triton" data-piece="1" data-img="assets/images/puzzle2.png">
+      <div class="float-layer first">
+        <div class="piece-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Спутник 2 -->
+    <div class="space-object moon" data-name="Nerida" data-piece="2" data-img="assets/images/puzzle3.png">
+      <div class="float-layer second">
+        <div class="piece-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Спутник 3 -->
+    <div class="space-object moon" data-name="Nayada" data-piece="3" data-img="assets/images/puzzle4.png">
+      <div class="float-layer third">
+        <div class="piece-overlay"></div>
+      </div>
+    </div>
+    <!-- финальный экран -->
+    <a class="next" href="#test">
+      <div class="button-next">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+  </div>
+  <div id="puzzleComplete" class="puzzle-complete">
+      <div class="complete-inner">
+        <h2 class="answer-puzzle">тут котик!</h2>
+        <img src="assets/images/kitty.jpg" alt="kitty" />
+        <h2>эта ты и чепырик</h2>
+        <button id="closePuzzle">закрыть</button>
+      </div>
+  </div>
+</section>
+<section class="test" id="test" data-block="test">
+  <div class="test-cover">
+    <P>тест!</P>
+    <h2 class="test-title">какой же ты ксено?</h2>
+    <P>развлекайся</P>
+    <button id="test-cover-btn">
+      начать
+    </button>
+  </div>
+  <div class="test-inner">
+    <a class="prev" href="#puzzle">
+      <div class="button-prev">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+    <div class="test-card" id="testCard">
+      <p class="question" id="questionText"></p>
+      <div class="answers" id="answers"></div>
+      <button class="next-btn" id="nextBtn" disabled>
+        далее
+      </button>
+    </div>
+
+    <!-- результат -->
+    <div class="test-result" id="testResult">
+       <h3 id="resultTitle"></h3>
+      <img id="resultImg" />
+     
+      <p id="resultText"></p>
+    </div>
+    <a class="next" href="#letters">
+      <div class="button-next">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+  </div>
+</section>
+<section class="letters" id="letters">
+  <a class="prev" href="#test">
+      <div class="button-prev">
+        <img src="assets/images/arrow.jpg">
+      </div>
+  </a>
+  <p class="letters-title">составь слова из данных букв, чтобы изменить ответ нажми кнопку сброса</p>
+  <!-- поле с буквами -->
+  <div class="letters-field" id="lettersField">
+    <div class="letter" data-letter="Y"><img src="assets/images/y.png"></div>
+    <div class="letter" data-letter="O"><img src="assets/images/o.png"></div>
+    <div class="letter" data-letter="U"><img src="assets/images/u.png"></div>
+    <div class="letter" data-letter="A"><img src="assets/images/a.png"></div>
+    <div class="letter" data-letter="R"><img src="assets/images/r.png"></div>
+    <div class="letter" data-letter="E"><img src="assets/images/e.png"></div>
+  </div>
+  <!-- зона слотов -->
+  <div class="slots-wrapper">
+    <div class="slots" id="slots">
+      <span class="left-slots">
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </span>
+      <span class="right-slots">
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </span>
+    </div>
+    <div class="result" id="result">
+      <h1>made of stars!</h1>
+    </div>
+    <button class="reset-btn" id="resetLetters"><img src="assets/images/ringarrows.jpg"> </button>
+  </div>
+    
+  <a class="next" href="#aquarius">
+      <div class="button-next">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+</section>
+<section class="aquarius" id="aquarius">
+  <a class="prev" href="#letters">
+      <div class="button-prev">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+  <p class="aquarius-title">исследуй самые яркие звёздочки</p>
+  <!-- Звёзды -->
+  <div class="star" data-compliment="твой день рождения находится в первом японском сезоне: 東風解凍(харукадзэ коори о току) - 
+восточные ветры растапливают лёд"style="top:15%; left:23%;" ></div>
+  <div class="star" data-compliment="ты не 10/10, ты как первые обновления геншина, вечерняя улица после дождя, свежие букеты любимых цветов, забавные мемы с буддой" style="top:28%; left:34%;"></div>
+  <div class="star" data-compliment="в следующий раз, когда будешь думать о чем-то прекрасном, не забудь подумать о себе" style="top:33%; left:21%;"></div>
+  <div class="star" data-compliment="&lt;img src='assets/images/budda.jpg' alt='Budda'&gt;" style="top:47%; left:25%;"></div>
+  <div class="star huudor" data-compliment="ты элегантная, girl, цени себя"></div>
+
+  <!-- Комплимент -->
+  <div class="compliment" id="compliment"></div>
+  <a class="next" href="#congrats">
+      <div class="button-next">
+        <img src="assets/images/arrow.jpg">
+      </div>
+    </a>
+</section>
+
+<section id="congrats">
+  <div class="congrats-content">
+      <div class="congrats-vinyl-wrap">
+        <div class="congrats-vinyl">
+          <img src="assets/images/congrats-vinyl.png">
+        </div>
+      </div>
+      <div class="congrats-png">
+        <img src="assets/images/congrats-png.png">
+      </div>
+      <div class="congrats-gifts">
+        <button class="congrats-gift1">
+          <img src="assets/images/congrats-gift.png">
+        </button>
+        <div class="congrats-text">
+          <p>с праздником, морфюш! успехов во всех начинаниях, будь такой же ахуенной, сияй всем назло.</p>
+        </div>
+        <button class="congrats-gift2">
+          <img src="assets/images/congrats-gift.png">
+        </button>
+        <div class="congrats-img">
+          <img src="assets/images/congrats-kitty.png">
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+<div class="footer">
+  <p>© kuwitidala/ninnao |all rights reserved 2026</p>
+</div>
+<script type="module" src="js/congrats.js" defer></script>
+<script type="module" src="js/letters.js" defer></script>
+
+<script type="module" src="js/main.js" defer></script>
+
+<script type="module">
+  import { initAquarius } from './js/aquarius.js';
+  initAquarius();
+</script>
+</body>
+</html>

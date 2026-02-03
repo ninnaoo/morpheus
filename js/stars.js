@@ -20,7 +20,7 @@ export function initStars() {
   window.addEventListener("resize", resize);
 
   starImage = new Image();
-  starImage.src = "/assets/images/star.png";
+  starImage.src = "assets/images/star.png";
 
   starImage.onload = () => {
     animate();
@@ -65,3 +65,4 @@ function animate() {
   requestAnimationFrame(animate);
 
 }
+

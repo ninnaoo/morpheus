@@ -67,7 +67,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 120px;
-  margin-left: -50%;
+  margin-left: -30%;
   border: none;
   background: none;
   cursor: pointer;
@@ -80,7 +80,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  margin-left: -50%;
+  margin-left: -30%;
   border: none;
   background: none;
   cursor: pointer;
@@ -93,16 +93,17 @@
   transform: scale(1.1);
 }
 .congrats-text{
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 22px;
   display: none;
   position: absolute;
-  right: 40%;
+  right: 500px;
   opacity: 0;
   animation: ani 1s forwards;
   width: 300px;
   font-family: 'comic sans ms';
   bottom: 600px;
+  text-shadow:  0px 0px 8px rgba(255, 255, 255, 1);
 }
 .congrats-img{
   height: 450px;
@@ -273,5 +274,6 @@
   animation: ani 1s forwards;
 }
 }
+
 
 

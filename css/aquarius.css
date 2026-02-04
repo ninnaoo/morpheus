@@ -111,4 +111,67 @@
     top: 40%;
   }
 }
+@media (max-height: 790px){
+  .huudor{
+    top: 17%;
+    left: 11%;
+  }
+  .sadalmelic{
+    top: 10%;;
+  }
+  .sadalsuud{
+    top: 22%;
+  }
+  .ancha{
+    top: 27%;
+  }
+  .noname{
+    top: 39%;
+  }
+}
+@media (max-height: 750px){
+  .huudor{
+    top: 16%;
+    left: 11%;
+  }
+  .sadalmelic{
+    top: 10%;;
+  }
+  .sadalsuud{
+    top: 21%;
+  }
+  .ancha{
+    top: 26%;
+  }
+  .noname{
+    top: 38%;
+  }
+}
+@media (max-height: 730px){
+  .huudor{
+    top: 15%;
+    left: 11%;
+  }
+  .ancha{
+    top: 25%;
+  }
 
+}
+@media (max-height: 750px){
+  .huudor{
+    top: 14%;
+    left: 11%;
+  }
+  .sadalmelic{
+    top: 9%;;
+  }
+  .sadalsuud{
+    top: 20%;
+  }
+  .ancha{
+    top: 24%;
+  }
+  .noname{
+    top: 37%;
+  }
+}

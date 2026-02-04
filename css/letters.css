@@ -24,7 +24,7 @@
   height: 500px;
   margin: 40px auto;
   overflow: hidden;
-  border: 1px white solid;
+  /*border: 1px white solid;*/
 }
 @media (max-width: 1520px){
   .letters-field{
@@ -116,4 +116,5 @@
 .right-slots{
   display: flex;
   gap: 5px;
+
 }

@@ -67,25 +67,21 @@
 
 
 /* ===== КОМПЛИМЕНТ ===== */
-.compliment1,
-.compliment2 {
+.compliment {
   position: absolute;
-  bottom: 130px;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%) translateY(-20px);
-  background: rgba(115, 128, 151, 0.4); /* туманный фон */
+  background: rgba(0, 0, 0, 0.4); /* туманный фон */
   backdrop-filter: blur(8px);
   padding: 15px 25px;
   border-radius: 12px;
   font-size: 20px;
   text-align: center;
+  opacity: 0;
   pointer-events: none;
   color: white;
-  transition: opacity 1s ease, transform 1s ease;
-  font-family: 'comic sans ms';
-  display: none;
-  width: 700px;
-  animation: ani 1s forwards;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .compliment img{
   height: 300px;
@@ -175,3 +171,4 @@
     top: 37%;
   }
 }
+

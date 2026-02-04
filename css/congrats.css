@@ -97,7 +97,7 @@
   font-size: 22px;
   display: none;
   position: absolute;
-  right: 500px;
+  right: 40%;
   opacity: 0;
   animation: ani 1s forwards;
   width: 300px;
@@ -108,7 +108,7 @@
   height: 450px;
   display: none;
   position: absolute;
-  right: 500px;
+  right: 40%;
   bottom: 10%;
   opacity: 0;
   animation: ani 1s forwards;
@@ -273,4 +273,5 @@
   animation: ani 1s forwards;
 }
 }
+
 

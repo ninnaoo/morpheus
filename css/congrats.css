@@ -5,6 +5,8 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .congrats-vinyl {
@@ -42,6 +44,10 @@
 .congrats-png {
   margin-left: -50px;
   z-index: 3;
+  width: 100%;
+}
+.congrats-png img{
+  height: 80%;
 }
 .congrats-gift1 img{
   height: 300px;
@@ -61,7 +67,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 120px;
-  margin-left: -400px;
+  margin-left: -10%;
   border: none;
   background: none;
   cursor: pointer;
@@ -74,7 +80,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  margin-left: -400px;
+  margin-left: -10%;
   border: none;
   background: none;
   cursor: pointer;
@@ -129,6 +135,7 @@
   }
   .congrats-png{
     margin-left: -200px;
+    width: 90%;
   }
   .congrats-vinyl-wrap{
     width: 800px;
@@ -250,10 +257,9 @@
   }
   .congrats-gift1{
     margin-top: 170px;
-    margin-left: -300px;
   }
   .congrats-text{
-    right: 330px;
+    right: 35%;
     width: 300px;
     bottom: 500px;
   }
@@ -261,7 +267,7 @@
   height: 450px;
   display: none;
   position: absolute;
-  right: 330px;
+  right: 35%;
   bottom: 3%;
   opacity: 0;
   animation: ani 1s forwards;

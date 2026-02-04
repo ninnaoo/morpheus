@@ -34,6 +34,22 @@
   top: 22%;
   left: 12%;
 }
+.sadalmelic{
+  top: 15%;
+  left: 23%;
+}
+.sadalsuud{
+  top: 28%;
+  left: 34%;
+}
+.ancha{
+  top: 33%;
+  left: 21%;
+}
+.noname{
+  top: 47%;
+  left: 25%;
+}
 @media (max-width: 1130px){
   .huudor{
     left: -2%;
@@ -51,9 +67,10 @@
 
 
 /* ===== КОМПЛИМЕНТ ===== */
-.compliment {
+.compliment1,
+.compliment2 {
   position: absolute;
-  top: 15%;
+  bottom: 130px;
   left: 50%;
   transform: translateX(-50%) translateY(-20px);
   background: rgba(115, 128, 151, 0.4); /* туманный фон */
@@ -62,11 +79,13 @@
   border-radius: 12px;
   font-size: 20px;
   text-align: center;
-  opacity: 0;
   pointer-events: none;
   color: white;
   transition: opacity 1s ease, transform 1s ease;
-   font-family: 'comic sans ms';
+  font-family: 'comic sans ms';
+  display: none;
+  width: 700px;
+  animation: ani 1s forwards;
 }
 .compliment img{
   height: 300px;
@@ -74,4 +93,21 @@
 .compliment.show {
   opacity: 1;
   
+}
+@media (max-height: 823px){
+  .huudor{
+    top: 17%;
+  }
+  .sadalmelic{
+    top: 11%;;
+  }
+  .sadalsuud{
+    top: 23%;
+  }
+  .ancha{
+    top: 28%;
+  }
+  .noname{
+    top: 40%;
+  }
 }
